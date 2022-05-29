@@ -1,0 +1,60 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/carlosfelipeblancocastro/Desktop/Archivos de Carlos Universidad/SUMMER 2022/Object-Oriented Programming Lab/Week 02 - Domain Primitives/Week02---Domain-Primitives---Carlos-Blanco/Week02---Domain-Primitives---Carlos-Blanco.csproj": {}
+  },
+  "projects": {
+    "/Users/carlosfelipeblancocastro/Desktop/Archivos de Carlos Universidad/SUMMER 2022/Object-Oriented Programming Lab/Week 02 - Domain Primitives/Week02---Domain-Primitives---Carlos-Blanco/Week02---Domain-Primitives---Carlos-Blanco.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/carlosfelipeblancocastro/Desktop/Archivos de Carlos Universidad/SUMMER 2022/Object-Oriented Programming Lab/Week 02 - Domain Primitives/Week02---Domain-Primitives---Carlos-Blanco/Week02---Domain-Primitives---Carlos-Blanco.csproj",
+        "projectName": "Week02---Domain-Primitives---Carlos-Blanco",
+        "projectPath": "/Users/carlosfelipeblancocastro/Desktop/Archivos de Carlos Universidad/SUMMER 2022/Object-Oriented Programming Lab/Week 02 - Domain Primitives/Week02---Domain-Primitives---Carlos-Blanco/Week02---Domain-Primitives---Carlos-Blanco.csproj",
+        "packagesPath": "/Users/carlosfelipeblancocastro/.nuget/packages/",
+        "outputPath": "/Users/carlosfelipeblancocastro/Desktop/Archivos de Carlos Universidad/SUMMER 2022/Object-Oriented Programming Lab/Week 02 - Domain Primitives/Week02---Domain-Primitives---Carlos-Blanco/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/carlosfelipeblancocastro/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

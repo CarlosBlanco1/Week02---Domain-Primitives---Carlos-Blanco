@@ -1,0 +1,10 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Week02___Domain_Primitives___Carlos_Blanco
+build_property.ProjectDir = /Users/carlosfelipeblancocastro/Desktop/Archivos de Carlos Universidad/SUMMER 2022/Object-Oriented Programming Lab/Week 02 - Domain Primitives/Week02---Domain-Primitives---Carlos-Blanco/
