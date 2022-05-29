@@ -16,6 +16,8 @@ class Lab2
         CreditCardNumber.TestCreditCardNumberCreationWithIncorrectInput();
         CreditCard.TestCreditCardCreationWithCorrectInput();
         CreditCard.TestCreditCardCreationWithIncorrectInput();
+        User.TestUserCreationWithCorrectInput();
+        User.TestUserCreationWithIncorrectInput();
         DriverProgram();
 
 
@@ -97,6 +99,8 @@ class Lab2
         public UserName _Name { get; set; }
         public CreditCard _CreditCard { get; set; }
 
+        //Create method for User
+
         public static User? Create(UserName userName, CreditCard creditCard)
         {
 
@@ -113,6 +117,41 @@ class Lab2
                 return user;
             }
 
+        }
+
+        //Test method for correct input
+
+        public static void TestUserCreationWithCorrectInput()
+        {
+            User MyUser = new User();
+            UserName MyUserName = UserName.CreateName("Carlos","Blanco","Felipe");
+            CreditCard MyCreditCard = CreditCard.CreateCreditCard("3333 3333 3333 3333", "9/23", "999");
+            MyUser = User.Create(MyUserName, MyCreditCard);
+            Debug.Assert(MyUser._Name.FirstName == "Carlos");
+            Debug.Assert(MyUser._Name.LastName == "Blanco");
+            Debug.Assert(MyUserName.Middlename == "Felipe");
+            Debug.Assert(MyUser._CreditCard._CreditCardNumber.InputCreditCardNumber == "3333 3333 3333 3333");
+            Debug.Assert(MyUser._CreditCard._ExpirationDate.Month == 9);
+            Debug.Assert(MyUser._CreditCard._ExpirationDate.Day == 23);
+            Debug.Assert(MyUser._CreditCard._CVVCode.CreditCardCVV == "999");
+            Console.WriteLine("Final tests passed!");
+
+        }
+
+        //Test method for incorrect input
+
+        public static void TestUserCreationWithIncorrectInput()
+        {
+            User MyIncorrectUser = new User();
+            UserName MyIncorrectUserName = UserName.CreateName("@","Blanco","Felipe");
+            CreditCard MyIncorrectCreditCard = CreditCard.CreateCreditCard("33 3333 3333 3333", "9/2", "999");
+            MyIncorrectUser = User.Create(MyIncorrectUserName, MyIncorrectCreditCard);
+            Debug.Assert(MyIncorrectUser == null);
+            MyIncorrectUserName = UserName.CreateName("lll","Blanco","Fipe");
+            MyIncorrectCreditCard = CreditCard.CreateCreditCard("33 3333 3333 3333", "2", "@@99");
+            MyIncorrectUser = User.Create(MyIncorrectUserName, MyIncorrectCreditCard);
+            Debug.Assert(MyIncorrectUser == null);
+            Console.WriteLine("Final tests passed!");
         }
 
 
